@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#0b0d12">
-<title>Draw Screen</title>
+<title>Lottery Picker</title>
 <style>
 :root{--bg:#0b0d12;--card:#141820;--card-2:#1b212c;--line:rgba(255,255,255,.08);--text:#f4f6f8;--muted:#9aa3b2;--red:#d3121a;--gold:#e2b657;--blue:#8eb6ff}
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:radial-gradient(1200px 500px at 50% -10%,#1c2433,var(--bg) 55%);color:var(--text);padding:calc(18px + env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom))}
 .brand{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}h1{font-size:32px;line-height:1.05;margin:6px 0 8px;letter-spacing:-.6px}.lede{color:var(--muted);font-size:14px;line-height:1.45;margin:0 0 16px}.actions{display:flex;gap:8px;margin-bottom:10px}button{border:0;border-radius:14px;padding:13px 14px;font-size:15px;font-weight:650;color:#fff;background:#2a3344}button.primary{background:var(--red);flex:1.4}button.ghost{flex:1}.status{min-height:18px;font-size:12px;color:#8fd0a8;margin:0 0 14px}.card{background:linear-gradient(180deg,rgba(255,255,255,.03),transparent 40%),var(--card);border:1px solid var(--line);border-radius:22px;padding:16px;margin:0 0 14px;box-shadow:0 10px 30px rgba(0,0,0,.22)}.kicker{color:var(--muted);font-size:11px;letter-spacing:.12em;text-transform:uppercase}.mark{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:6px}.mark.pb{background:var(--red)}.mark.mm{background:var(--gold)}.jack{font-size:36px;font-weight:720;letter-spacing:-1px;margin:6px 0 2px}.cash,.meta{color:var(--muted);font-size:13px;line-height:1.4}.rank{background:var(--card-2);border-radius:16px;padding:12px;margin-top:10px}.rank-top{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:8px}.balls{display:flex;gap:7px;flex-wrap:wrap}.ball{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#f7f8fa;color:#121418;font-weight:720;font-size:14px}.ball.pb{background:var(--red);color:#fff}.ball.mb{background:var(--gold);color:#1c1608}.sched{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}.sched:last-child{border-bottom:0}.links a{display:block;color:var(--blue);text-decoration:none;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}.links a:last-child{border-bottom:0}.modal{position:fixed;inset:0;background:rgba(0,0,0,.66);display:none;align-items:flex-end}.modal.open{display:flex}.sheet{background:#121820;width:100%;max-height:84vh;overflow:auto;border-radius:22px 22px 0 0;padding:18px 16px calc(22px + env(safe-area-inset-bottom))}pre{white-space:pre-wrap;color:#d7deea;font-size:12px;line-height:1.45}
 </style></head><body>
-<div class="brand">Draw screen</div>
-<h1>Powerball and Mega Millions</h1>
-<p class="lede">Construction ranks from the public draw file. Every row has the same jackpot odds as a quick pick.</p>
+<div class="brand">Lottery Picker</div>
+<h1>Lottery Picker</h1>
+<p class="lede">Powerball and Mega Millions construction ranks from the public draw file. Every row has the same jackpot odds as a quick pick.</p>
 <div class="actions"><button class="primary" id="refresh">Refresh after draw</button><button class="ghost" id="formula">Formula</button></div>
 <p class="status" id="status">Last published snapshot, 4 Oct 2026.</p>
 <section class="card" id="pb-card"></section>
